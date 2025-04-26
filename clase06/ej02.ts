@@ -19,14 +19,15 @@ class Maestro{
     }
 }
 
-class MaestroMatematicas{
+class MaestroMatematicas extends Maestro{
     enseniar(){
+        super.enseniar()
         console.log(`¡Hora de matamáticas!`)
     }
 }
 
 let maestro1 = new Maestro("Marce","Proyecto Final")
-let profeMate = new MaestroMatematicas()
+let profeMate = new MaestroMatematicas("Paola","Matemática")
 
 maestro1.enseniar()
 profeMate.enseniar()
